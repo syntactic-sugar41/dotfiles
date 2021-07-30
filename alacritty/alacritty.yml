@@ -1,0 +1,141 @@
+env:
+  TERM: xterm-256color
+window:
+  padding:
+    x: 30
+    y: 10
+  decorations: none
+font:
+  normal:
+    family: InputMono Nerd Font
+    style: Regular
+  bold:
+    family: InputMono Nerd Font
+    style: Bold
+  italic:
+    family: InputMono Nerd Font
+    style: Italic
+  size: 13
+render_timer: false
+draw_bold_text_with_bright_colors: true
+key_bindings:
+  - key: V
+    mods: Control|Shift
+    action: Paste
+  - key: C
+    mods: Control|Shift
+    action: Copy
+  - key: Paste
+    action: Paste
+  - key: Copy
+    action: Copy
+  - key: Q
+    mods: Command
+    action: Quit
+  - key: W
+    mods: Command
+    action: Quit
+  - key: Key0
+    mods: Control
+    action: ResetFontSize
+  - key: Key9
+    mods: Control
+    action: IncreaseFontSize
+  - key: Key8
+    mods: Control
+    action: DecreaseFontSize
+  - key: PageUp
+    mods: Shift
+    action: ScrollPageUp
+    mode: ~Alt
+  - key: PageDown
+    mods: Shift
+    action: ScrollPageDown
+    mode: ~Alt
+  - key: Home
+    mods: Shift
+    action: ScrollToTop
+    mode: ~Alt
+  - key: End
+    mods: Shift
+    action: ScrollToBottom
+    mode: ~Alt
+schemes:
+  tokyo-day:
+    primary:
+      background: "0xe1e2e7"
+      foreground: "0x3760bf"
+    normal:
+      black: "0xe9e9ed"
+      red: "0xf52a65"
+      green: "0x587539"
+      yellow: "0x8c6c3e"
+      blue: "0x2e7de9"
+      magenta: "0x9854f1"
+      cyan: "0x007197"
+      white: "0x6172b0"
+    bright:
+      black: "0xa1a6c5"
+      red: "0xf52a65"
+      green: "0x587539"
+      yellow: "0x8c6c3e"
+      blue: "0x2e7de9"
+      magenta: "0x9854f1"
+      cyan: "0x007197"
+      white: "0x3760bf"
+  indexed_colors:
+    - index: 16
+      color: "0xff9e64"
+    - index: 17
+      color: "0xdb4b4b"
+  tokyo-night: &tokyo-night
+    primary:
+      background: "0x1a1b26"
+      foreground: "0xc0caf5"
+    normal:
+      black: "0x15161E"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xbb9af7"
+      cyan: "0x7dcfff"
+      white: "0xa9b1d6"
+    bright:
+      black: "0x414868"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xbb9af7"
+      cyan: "0x7dcfff"
+      white: "0xc0caf5"
+    indexed_colors:
+      - index: 16
+        color: "0xff9e64"
+      - index: 17
+        color: "0xdb4b4b"
+  tokyo-night-storm: null
+  primary:
+    background: "0x24283b"
+    foreground: "0xc0caf5"
+  normal:
+    black: "0x1D202F"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xa9b1d6"
+  bright:
+    black: "0x414868"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xc0caf5"
+
+colors: *tokyo-night
